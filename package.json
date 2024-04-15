@@ -1,0 +1,20 @@
+{
+  "name": "calculator-app-main",
+  "version": "1.0.0",
+  "description": "calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./style.css -o ./ola/dele.css --watch"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "oladele akomolede",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

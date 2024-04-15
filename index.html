@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./ola/dele.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-[hsl(222,26%,31%)]">
+<div>
+          
+    <div class="flex justify-center mx-auto">
+      <div>
+        <h1 class="font-sans font-semibold text-5xl text-[#eae3dc] mt-60 mr-52">Calc</h1>
+        <h6 class="font-sans font-semibold text-[#eae3dc] ml-64 ">THEME</h6>
+        <div class="font-sans font-semibold text-[#eae3dc] flex justify-center ml-64 border w-20 h-6 rounded-md bg-[hsl(224,36%,15%)] border-none">
+          <input class="accent-red-500" id="theme1" type="radio" name="theme" value="0" checked>
+          <label for="theme1">1</label> <br>
+        
+          <input class="accent-red-500" id="theme2" type="radio" value="1" name="theme">
+          <label for="theme2">2</label> <br>
+        
+          <input class="accent-red-500" id="theme3" type="radio" value="2" name="theme">
+          <label for="theme3">3</label>
+        </div>
+      </div>
+     
+    </div>
+
+  <div class="bg-[hsl(224,36%,15%)] w-[400px] h-[10vh] mt-5 flex  mx-auto rounded-xl justify-end pt-6 pr-5">
+  <p class="text-4xl text-white font-semibold font-sans">399,981</p>
+  </div>
+  <div class="flex justify-center items-center bg-[hsl(223,31%,20%)] w-[400px] h-[35vh] mt-3 mx-auto rounded-xl">
+    <div class="grid grid-cols-4 gap-y-5 gap-x-9 w-[320px] sm:w-[100px] lg:w-[320px] absolute mr-2">
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+       font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-2xl shadow-[hsl(28,16%,65%)]">7</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">8</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">9</button>
+      <button class="bg-[hsl(225,21%,49%)] text-[hsl(30,25%,89%)] hover:bg-[hsl(6,70%,34%)] uppercase font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">del</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">4</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">5</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">6</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">+</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">1</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">2</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">3</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">-</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">.</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">0</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">/</button>
+      <button class="bg-[hsl(30,25%,89%)] text-[hsl(224,28%,35%)] font-extrabold
+      font-sans text-2xl w-[70px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(28,16%,65%)]">x</button>
+      <button class="bg-[hsl(225,21%,49%)] text-[hsl(30,25%,89%)] hover:bg-[hsl(6,70%,34%)] font-extrabold
+      font-sans text-2xl w-[160px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(6,70%,34%)] col-span-2 uppercase">reset</button>
+      <button class="bg-[hsl(6,70%,34%)] text-[hsl(30,25%,89%)] font-extrabold
+      font-sans text-2xl w-[160px] h-[40px] rounded-md drop-shadow-lg shadow-[hsl(6,70%,34%)] col-span-2">=</button>
+  
+    </div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/oladele-akomolede-78ab1863" target="_blank">Oladele Akomolede</a>.
+  </div>
+</body>
+</html>
